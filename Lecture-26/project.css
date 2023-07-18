@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: aliceblue;
+    /* color: aliceblue; */
     font-family: 'Poppins', sans-serif;
 }
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(179, 232, 232);
     overflow-x: none;
 }
@@ -18,6 +18,7 @@
     height: 60px;
     padding: 10px;
     background-color: rgb(78 78 131);
+    color: aliceblue;
 }
 
 #nav-list {
@@ -38,12 +39,41 @@
 
 #nav-list a {
     text-decoration: none;
-    padding: 16px;
+    padding: 20px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
+    color: aliceblue;
 }
 
 #nav-list a:hover {
     color: #26f706;
     cursor: pointer;
+}
+
+.content-box {
+    width: 80%;
+    margin: auto;
+    border: 2px solid rgb(7, 235, 45);
+    background-color: azure;
+    /* text-align: start; */
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-box img {
+    height: 100px;
+}
+
+.footer-box {
+    color: aliceblue;
+    background-color: rgb(78 78 131);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
 }
