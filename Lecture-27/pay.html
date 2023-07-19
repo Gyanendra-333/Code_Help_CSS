@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 99vh;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 500px;
+            height: 660px;
+            background-color: aliceblue;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .card img {
+            width: 500px;
+            box-sizing: content-box;
+            height: 200px;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+
+        .card p {
+            display: flex;
+            padding: 8px;
+            font-weight: 500;
+        }
+
+        .price {
+            width: 400px;
+            height: 70px;
+            background-color: #175389;
+            border-radius: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .price .left img {
+            width: 34px;
+            height: 40px;
+            padding-top: 6px;
+        }
+
+
+        .price .left p {
+            font-size: 20px;
+            padding-top: 20px;
+            font-weight: 600;
+            color: aliceblue;
+        }
+
+
+        .left {
+            /* width: fit-content; */
+            display: flex;
+            gap: 15px;
+            cursor: pointer;
+        }
+
+        .right a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .pay-btn {
+            width: 400px;
+            color: #f09112;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            font-size: 20px;
+            font-weight: 600;
+            height: 50px;
+            border-radius: 14px;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 18px #888888;
+            cursor: pointer;
+        }
+
+        .pay-btn:hover {
+            color: #00ff9a;
+            background-color: yellowgreen;
+        }
+
+        .cancel {
+            text-decoration: none;
+            font-size: 1.4rem;
+            padding: 30px;
+            font-weight: 600;
+            color: #cc0707;
+            cursor: pointer;
+        }
+
+        .cancel:hover {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="mac.jpg" alt="#">
+            <h2>Order Summery</h2>
+            <p>It is hard to imagine a more stupid or
+                more dangerous way of making decisions than by putting those decisions in the
+                hands of people who pay no price for being wrong.</p>
+
+            <div class="price">
+                <div class="left">
+                    <img src="pay.png" alt="#">
+                    <!-- <div class="pay-text"> -->
+                    <p>Amount</p>
+                    <p>$ 49.00</p>
+                    <!-- </div> -->
+                </div>
+
+                <div class="right">
+                    <a href="#">Change New</a>
+                </div>
+            </div>
+
+            <button class="pay-btn">Pay to Proceed</button>
+            <a class="cancel" href="#">Cancel Order</a>
+
+        </div>
+    </div>
+</body>
+
+</html>
